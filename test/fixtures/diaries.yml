@@ -1,0 +1,10 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id: 1
+  title: 今日は1日プログラミング
+  body: 元々稲刈りの予定だったが1日プログラミングの勉強をした。
+two:
+  id: 2
+  title: 昨日は実家
+  body: 昨日は実家で川越の名所である菓子屋横丁に行った。

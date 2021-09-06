@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @diaryapp.title %>
+</p>
+
+<p>
+  <strong>Body:</strong>
+  <%= @diaryapp.body %>
+</p>
+
+<%= link_to 'Edit', edit_diaryapp_path(@diaryapp) %> |
+<%= link_to 'Back', diaryapps_path %>

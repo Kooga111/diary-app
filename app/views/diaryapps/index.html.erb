@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Diaryapps</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Body</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @diaryapps.each do |diaryapp| %>
+      <tr>
+        <td><%= diaryapp.title %></td>
+        <td><%= diaryapp.body %></td>
+        <td><%= link_to 'Show', diaryapp %></td>
+        <td><%= link_to 'Edit', edit_diaryapp_path(diaryapp) %></td>
+        <td><%= link_to 'Destroy', diaryapp, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Diaryapp', new_diaryapp_path %>
