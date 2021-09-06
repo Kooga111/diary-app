@@ -1,7 +1,8 @@
 class DiaryappsController < ApplicationController
   before_action :set_diaryapp, only: %i[ show edit update destroy ]
 
-  # GET /diaryapps or /diaryapps.json
+  # GET /diaryapps 
+  # GET /diaryapps.json
   def index
     @diaryapps = Diaryapp.all
   end

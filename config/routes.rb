@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :diaryapps
+  resources :diaries
   get '/users', to: 'users#index'
   get '/users/new'
 end
